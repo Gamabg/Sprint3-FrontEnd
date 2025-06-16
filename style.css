@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #2e004f;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.logo{
+    font-family: teko, sans-serif;
+    line-height: 30px;
+}
+
+.sidebar {
+    background-color: #1a0033;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.sidebar nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.sidebar nav a.active {
+    background-color: #9333ea;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.gamezone,
+.stats {
+    background-color: #9333ea;
+    padding: 20px;
+    border-radius: 16px;
+    flex: 1;
+}
+
+.gamezone .field {
+    background: url('campo.png') center/cover no-repeat;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    background-color: #6b21a8;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.highlight-player img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
