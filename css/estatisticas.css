@@ -1,0 +1,229 @@
+/* ========================= FONTS & ROOT VARIABLES ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-bg: #4B0082;
+    --secondary-bg: #8A2BE2;
+    --text-color: #fff;
+    --card-bg: rgba(0, 0, 0, 0.3);
+    --border-radius: 10px;
+    --player-card-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: #2d004d;
+    color: white;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #1e0033;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar .logo {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: #5e00a3;
+    border-left: 4px solid #fff;
+    padding-left: 10px;
+}
+
+/* Container central */
+.stats-center-container {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #4d007a;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+/* Seções principais */
+.main-content-stats>section,
+.main-content-stats>div {
+    background-color: #6a00b6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* Jogadora em destaque */
+.player-profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.player-profile-card .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.profile-details .player-name-large {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-details .player-position-large {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.profile-stats div {
+    text-align: center;
+}
+
+.profile-stats small {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Estatísticas do time */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.stats-grid div strong {
+    display: block;
+    font-size: 22px;
+}
+
+/* Saldo de Gols */
+.goal-numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.goal-numbers div {
+    text-align: center;
+}
+
+.goal-numbers small {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Tabela como imagem */
+.table-section img.league-table {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Comparativo de jogadoras */
+.compare-card {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.compare-card .player img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+.compare-card .player h3 {
+    font-size: 22px;
+}
+
+.compare-card .player p {
+    font-size: 18px;
+    color: #eee;
+    line-height: 1.4;
+}
+
+/* Agenda de jogos */
+.upcoming-games ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.upcoming-games li::before {
+    content: "📅 ";
+}
+
+/* Responsivo simples */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .stats-center-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .compare-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

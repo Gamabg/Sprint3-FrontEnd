@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="../css/gamezone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h1 class="logo">JOGA <br>JUNTO</h1>
+        <nav>
+            <a href="../index.html">🏠 Home</a>
+            <a href="../pages/estatisticas.html">⚽ Estatísticas</a>
+            <a href="../pages/inspiracoes.html">📖 Inspirações</a>
+            <a href="../pages/fanzone.html">👥 FanZone</a>
+            <a href="../pages/gamezone.html" class="active">⚡ GameZone</a>
+        </nav>
+    </aside>
+
+    <div class="main-content gamezone-container">
+        <header class="header">
+            <h1>⚡ GameZone</h1>
+            <div class="moeda-box">⚽ Pp. 20.00</div>
+        </header>
+
+        <section class="tactical-board">
+            <h2>Campo Tático</h2>
+            <div class="campo-tatico">
+                <!-- Goleira -->
+                <div class="linha linha-goleira">
+                    <div class="jogadora">
+                        <span class="numero">1</span>
+                        <span class="nome">Goleira</span>
+                    </div>
+                </div>
+
+                <!-- Defesa: 4 jogadoras -->
+                <div class="linha linha-defesa">
+                    <div class="jogadora"><span class="numero">2</span><span class="nome">LD</span></div>
+                    <div class="jogadora"><span class="numero">3</span><span class="nome">ZAG</span></div>
+                    <div class="jogadora"><span class="numero">4</span><span class="nome">ZAG</span></div>
+                    <div class="jogadora"><span class="numero">6</span><span class="nome">LE</span></div>
+                </div>
+
+                <!-- Meio campo: 3 jogadoras -->
+                <div class="linha linha-meio">
+                    <div class="jogadora"><span class="numero">5</span><span class="nome">VOL</span></div>
+                    <div class="jogadora"><span class="numero">8</span><span class="nome">MC</span></div>
+                    <div class="jogadora"><span class="numero">10</span><span class="nome">MEI</span></div>
+                </div>
+
+                <!-- Ataque: 3 jogadoras -->
+                <div class="linha linha-ataque">
+                    <div class="jogadora"><span class="numero">7</span><span class="nome">PE</span></div>
+                    <div class="jogadora"><span class="numero">9</span><span class="nome">CA</span></div>
+                    <div class="jogadora"><span class="numero">11</span><span class="nome">PD</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <h2>CARDS</h2>
+            <div class="player-card-box">
+                <img src="../img/adriana.png" alt="Adriana">
+                <div class="player-info">
+                    <h3>ADRIANA</h3>
+                    <p>Atacante do Corinthians</p>
+                    <div class="stats">
+                        <span>Drible: 89</span>
+                        <span>Velocidade: 90</span>
+                        <span>Finalização: 88</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn">Trocar Jogadora</button>
+                        <span class="valor">Pp. 20.00</span>
+                        <button class="btn-outline">Ver Destaques</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-card-box">
+                <img src="../img/kemelli.png" alt="Kemelli">
+                <div class="player-info">
+                    <h3>KEMELLI</h3>
+                    <p>Goleira do Corinthians</p>
+                    <div class="stats">
+                        <span>Drible: 75</span>
+                        <span>Velocidade: 85</span>
+                        <span>Finalização: 70</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn">Trocar Jogadora</button>
+                        <span class="valor">Pp. 20.00</span>
+                        <button class="btn-outline">Ver Destaques</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

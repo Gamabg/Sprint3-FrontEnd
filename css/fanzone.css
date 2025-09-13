@@ -1,0 +1,173 @@
+/* ========================= FONTS & ROOT VARIABLES ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-bg: #4B0082;
+    --secondary-bg: #8A2BE2;
+    --text-color: #fff;
+    --card-bg: rgba(0, 0, 0, 0.3);
+    --border-radius: 10px;
+    --player-card-bg: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar {
+    background-color: #1a0033;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-family: "Teko", sans-serif;
+    line-height: 30px;
+}
+
+.sidebar h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.sidebar nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+    background-color: #9333ea;
+}
+
+.sidebar nav a.active {
+    background-color: #9333ea;
+}
+
+/* === HEADER === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d007a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.menu-icon,
+.search-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* === FANZONE MAIN CONTAINER === */
+.fanzone-container {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #2d004d;
+    min-height: 100vh;
+    color: white;
+}
+
+/* === FANZONE - FEED STYLE === */
+.fan-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fan-post {
+    display: flex;
+    gap: 15px;
+    background-color: #3f006b;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s;
+}
+
+.fan-post:hover {
+    background-color: #52008b;
+}
+
+.fan-post .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content .username {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.post-content .username small {
+    color: #ccc;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #f9f9f9;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .fanzone-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .fan-feed {
+        max-width: 100%;
+    }
+
+    .fan-post {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .fan-post .avatar {
+        width: 40px;
+        height: 40px;
+    }
+}
