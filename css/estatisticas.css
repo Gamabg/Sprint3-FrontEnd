@@ -130,15 +130,21 @@ body {
 
 /* Estatísticas do time */
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    gap: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.stats-grid div strong {
-    display: block;
-    font-size: 22px;
+.stats-grid img {
+    height: 200px;
+}
+
+.stats {
+    width: 100%;
+    min-width: 50%;
+    justify-content: space-between;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
 }
 
 /* Saldo de Gols */
@@ -222,10 +228,13 @@ body {
         padding-left:100px
     }
 
-    .sidebar nav a {
-        border-left: 0px ;
-        align-items: center;
-    }
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: #5e00a3;
+    border-left: none;
+    padding-left: 10px;
+}
+
 
     .stats-center-container {
         margin-left: 0;
