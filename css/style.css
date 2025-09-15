@@ -1,6 +1,3 @@
-/* ========================= FONTS & ROOT VARIABLES ========================= */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 :root {
     --primary-bg: #4B0082;
     --secondary-bg: #8A2BE2;
@@ -10,22 +7,22 @@
     --player-card-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* ========================= BASE STYLES ========================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-/* ========================= SIDEBAR ========================= */
-.sidebar {
-    background-color: #1a0033;
-    padding: 20px;
-    width: 200px;
-    height: 100vh;
+
+.nav{
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
     top: 0;
-    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -33,23 +30,11 @@ body {
     line-height: 30px;
 }
 
-.sidebar h1 {
-    font-size: 42px;
-    color: white;
-}
-
-.sidebar nav {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 10px 0;
     font-weight: bold;
-    padding: 6px 8px;
+    padding: 6px;
     border-radius: 6px;
     transition: 0.2s;
 }
