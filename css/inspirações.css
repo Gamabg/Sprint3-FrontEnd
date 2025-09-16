@@ -47,10 +47,7 @@ body {
     padding: 1rem 0;
 }
 
-.header 
-
 .logo {
-    font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: bolder;
     color: var(--text-color);
@@ -139,49 +136,12 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--cor-terciaria);
-}
-
-.navegacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.menu a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-.menu a:hover {
-    color: var(--cor-destaque);
-}
-
-.menu a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--cor-destaque);
-    transition: width 0.3s ease;
-}
-
-.menu a:hover::after {
-    width: 100%;
+    color: var(--cor-secundaria);
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--border-radius);
 }
 
 /* MAIN  */
-
 .secao-hero {
     text-align: center;
     padding: 4rem 0;
@@ -381,9 +341,30 @@ body {
     margin-top: 4rem;
 }
 
+/* Reponsivo */
 @media (max-width: 768px) {
-    .titulo-principal {
-        font-size: 2rem;
+    .header-top {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .search-container {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center; 
+        width: 100%;         
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
     }
 
     .grid-historias {
@@ -392,16 +373,6 @@ body {
 
     .card-destaque {
         grid-column: span 1;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .navegacao {
-        flex-direction: column;
-        gap: 1rem;
     }
 
     .estatisticas-rapidas {

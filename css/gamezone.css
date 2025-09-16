@@ -344,9 +344,43 @@ body {
 }
 
 
+
+
 /* Responsivo */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .gamezone-grid {
         grid-template-columns: 1fr;
+    }
+
+    .header-top {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .search-container {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center; 
+        width: 100%;         
+    }
+
+    .nav-link {
+        font-size: .9rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .formacoes-container{
+        flex-direction: column;
+    }
+
+    .campo-preview {
+        width: 100%;
     }
 }
