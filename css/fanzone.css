@@ -32,7 +32,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-segundaria));
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     position: sticky;
     top: 0;
@@ -55,7 +55,7 @@ body {
     line-height: 30px;
 }
 
-.junto{
+.junto {
     font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: bold;
@@ -139,4 +139,147 @@ body {
 
 .nav-link:hover {
     color: var(--cor-terciaria);
+}
+
+/* Seu comentario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    align-self: flex-end;
+    background: #4B0082;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6A0DAD;
+}
+
+
+/* FanZone Posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.post-card {
+    background: var(--card-bg-jogadora);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(75, 0, 130, 0.3);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.post-role {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-content {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Sidebar lists */
+
+.sidebar{
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--card-bg); 
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.top-players,
+.popular-posts {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.top-players li,
+.popular-posts li {
+    background: var(--card-bg, rgba(255, 255, 255, 0.08));
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    color: var(--text-color, #fff);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* Efeito hover */
+.top-players li:hover,
+.popular-posts li:hover {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Avatar opcional (se quiser colocar foto dos jogadores/posts) */
+.top-players li::before,
+.popular-posts li::before {
+    content: "⭐"; /* pode trocar por ícone ou imagem */
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    opacity: 0.8;
 }
