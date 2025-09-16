@@ -33,7 +33,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-segundaria));
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     position: sticky;
     top: 0;
@@ -46,6 +46,8 @@ body {
     justify-content: space-between;
     padding: 1rem 0;
 }
+
+.header 
 
 .logo {
     font-family: 'Montserrat';
@@ -146,12 +148,6 @@ body {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--cor-destaque);
-}
-
 .menu {
     display: flex;
     list-style: none;
@@ -195,10 +191,7 @@ body {
 .titulo-principal {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, var(--text-color), var(--cor-destaque));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    
 }
 
 .subtitulo-principal {
@@ -296,6 +289,7 @@ body {
     padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid var(--cor-sucesso);
+    margin-top: 2rem;
 }
 
 .conquistas h4 {
@@ -326,6 +320,7 @@ body {
 .card-destaque {
     grid-column: span 2;
     background: linear-gradient(135deg, var(--card-bg-jogadora), rgba(255, 107, 157, 0.1));
+    padding-bottom: 2rem;
 }
 
 .citacao {
